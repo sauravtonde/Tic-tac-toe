@@ -6,21 +6,20 @@
 body {
   background-color: #6969B3;
   text-align: center;
-
 }
 
-.tic{
+.tic {
   margin-top: 2rem;
   font-size: 12vmin;
   font-weight: bold;
   color: #25171A;
 }
+
 .container {
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .game {
@@ -31,8 +30,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1.5vmin;
-
-
 }
 
 .box {
@@ -45,28 +42,16 @@ body {
   color: #25171A;
   background-color: #533A7B;
   font-weight: bolder;
-
 }
 
-#reset-btn {
+#reset-btn, #new-btn {
   padding: 1rem;
   font-size: 1.25rem;
   background-color: #25171A;
   color: #ffffff;
   border-radius: 1rem;
   border: none;
-
-}
-
-#new-btn {
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #25171A;
-  color: #ffffff;
-  border-radius: 1rem;
-  border: none;
-
-
+  margin: 0.5rem;
 }
 
 #msg {
@@ -83,6 +68,62 @@ body {
   gap: 4rem;
 }
 
-.hide{
+.hide {
   display: none;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .tic {
+    font-size: 10vmin;
+  }
+
+  .game {
+    height: 80vmin;
+    width: 80vmin;
+    gap: 1vmin;
+  }
+
+  .box {
+    height: 16vmin;
+    width: 16vmin;
+    font-size: 6vmin;
+  }
+
+  #reset-btn, #new-btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  #msg {
+    font-size: 4vmin;
+  }
+}
+
+/* Media Query for Extra Small Screens */
+@media (max-width: 480px) {
+  .tic {
+    font-size: 8vmin;
+  }
+
+  .game {
+    height: 90vmin;
+    width: 90vmin;
+    gap: 0.5vmin;
+  }
+
+  .box {
+    height: 14vmin;
+    width: 14vmin;
+    font-size: 5vmin;
+  }
+
+  #reset-btn, #new-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  #msg {
+    font-size: 3.5vmin;
+  }
 }
